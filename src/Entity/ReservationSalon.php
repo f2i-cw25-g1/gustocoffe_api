@@ -45,6 +45,22 @@ class ReservationSalon
      */
     private $salon;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $option_bureautique;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $option_restauration;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Facture::class, inversedBy="listeSalonsReserves")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $facture;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -106,6 +122,42 @@ class ReservationSalon
     public function setSalon(?Salon $salon): self
     {
         $this->salon = $salon;
+
+        return $this;
+    }
+
+    public function getOptionBureautique(): ?bool
+    {
+        return $this->option_bureautique;
+    }
+
+    public function setOptionBureautique(bool $option_bureautique): self
+    {
+        $this->option_bureautique = $option_bureautique;
+
+        return $this;
+    }
+
+    public function getOptionRestauration(): ?bool
+    {
+        return $this->option_restauration;
+    }
+
+    public function setOptionRestauration(bool $option_restauration): self
+    {
+        $this->option_restauration = $option_restauration;
+
+        return $this;
+    }
+
+    public function getFacture(): ?Facture
+    {
+        return $this->facture;
+    }
+
+    public function setFacture(?Facture $facture): self
+    {
+        $this->facture = $facture;
 
         return $this;
     }

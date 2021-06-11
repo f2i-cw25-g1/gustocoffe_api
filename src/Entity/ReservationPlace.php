@@ -45,6 +45,22 @@ class ReservationPlace
      */
     private $place_grande_salle;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $option_bureautique;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $option_restauration;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Facture::class, inversedBy="listePlacesReservees")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $facture;
+
 
     public function getId(): ?int
     {
@@ -107,6 +123,42 @@ class ReservationPlace
     public function setPlaceGrandeSalle(?PlaceGrandeSalle $place_grande_salle): self
     {
         $this->place_grande_salle = $place_grande_salle;
+
+        return $this;
+    }
+
+    public function getOptionBureautique(): ?bool
+    {
+        return $this->option_bureautique;
+    }
+
+    public function setOptionBureautique(bool $option_bureautique): self
+    {
+        $this->option_bureautique = $option_bureautique;
+
+        return $this;
+    }
+
+    public function getOptionRestauration(): ?bool
+    {
+        return $this->option_restauration;
+    }
+
+    public function setOptionRestauration(bool $option_restauration): self
+    {
+        $this->option_restauration = $option_restauration;
+
+        return $this;
+    }
+
+    public function getFacture(): ?Facture
+    {
+        return $this->facture;
+    }
+
+    public function setFacture(?Facture $facture): self
+    {
+        $this->facture = $facture;
 
         return $this;
     }
