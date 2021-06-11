@@ -51,6 +51,12 @@ class Facture
      */
     private $listeSalonsReserves;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Utilisateur::class, inversedBy="factures")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $utilisateur;
+
     public function __construct()
     {
         $this->listePlacesReservees = new ArrayCollection();
@@ -166,6 +172,18 @@ class Facture
                 $listeSalonsReserf->setFacture(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getUtilisateur(): ?Utilisateur
+    {
+        return $this->utilisateur;
+    }
+
+    public function setUtilisateur(?Utilisateur $utilisateur): self
+    {
+        $this->utilisateur = $utilisateur;
 
         return $this;
     }
