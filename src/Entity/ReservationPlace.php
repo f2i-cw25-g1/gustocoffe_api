@@ -45,10 +45,6 @@ class ReservationPlace
      */
     private $place_grande_salle;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $date_commande;
 
     public function getId(): ?int
     {
@@ -115,15 +111,4 @@ class ReservationPlace
         return $this;
     }
 
-    public function getDateCommande(): ?\DateTimeInterface
-    {
-        return $this->date_commande;
-    }
-
-    public function setDateCommande(\DateTimeInterface $date_commande): self
-    {
-        $this->date_commande = $date_commande;
-
-        return $this;
-    }
 }

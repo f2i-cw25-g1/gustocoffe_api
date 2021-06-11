@@ -40,11 +40,6 @@ class ReservationSalon
     private $prix;
 
     /**
-     * @ORM\Column(type="datetime")
-     */
-    private $date_commande;
-
-    /**
      * @ORM\ManyToOne(targetEntity=Salon::class, inversedBy="reservationsDuSalon")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -99,18 +94,6 @@ class ReservationSalon
     public function setPrix(float $prix): self
     {
         $this->prix = $prix;
-
-        return $this;
-    }
-
-    public function getDateCommande(): ?\DateTimeInterface
-    {
-        return $this->date_commande;
-    }
-
-    public function setDateCommande(\DateTimeInterface $date_commande): self
-    {
-        $this->date_commande = $date_commande;
 
         return $this;
     }
