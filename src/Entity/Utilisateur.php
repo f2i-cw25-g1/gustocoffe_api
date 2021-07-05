@@ -26,6 +26,8 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * @Assert\NotBlank(message = "Merci de saisir votre email")
+     * @Assert\Email(message = "L'adresse email '{{ value }}' n'est pas valide.")
      */
     private $email;
 
@@ -37,7 +39,9 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
-     * @Assert\Length(max="3", maxMessage="Attention, pas plus de 3 caractères.")
+     * @Assert\Length(min="8", minMessage="Veuillez saisir un mot de passe d'au moins 8 caractères")
+     * @Assert\Length(max="20", maxMessage="Veuillez saisir un mot de passe de 20 caractères maximum")
+     * @Assert\NotCompromisedPassword(message="Le mot de passe saisi a déjà fuité sur internet, veuillez saisir un autre mot de passe.")
      */
     private $password;
 
@@ -48,16 +52,22 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min="4", minMessage="Veuillez saisir un nom d'utilisateur d'au moins 4 caractères")
+     * @Assert\Length(max="20", maxMessage="Veuillez saisir un nom d'utilisateur de 20 caractères maximum")
      */
     private $username;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min="2", minMessage="Veuillez saisir un nom d'au moins 2 caractères")
+     * @Assert\Length(max="30", maxMessage="Veuillez saisir un nom de 30 caractères maximum")
      */
     private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min="2", minMessage="Veuillez saisir un prénom d'au moins 2 caractères")
+     * @Assert\Length(max="30", maxMessage="Veuillez saisir un prénom de 30 caractères maximum")
      */
     private $prenom;
 
