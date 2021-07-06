@@ -31,6 +31,11 @@ class Salon
      */
     private $reservationsDuSalon;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $nombre_place;
+
     public function __construct()
     {
         $this->reservationsDuSalon = new ArrayCollection();
@@ -79,6 +84,18 @@ class Salon
                 $reservationsDuSalon->setSalon(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getNombrePlace(): ?int
+    {
+        return $this->nombre_place;
+    }
+
+    public function setNombrePlace(int $nombre_place): self
+    {
+        $this->nombre_place = $nombre_place;
 
         return $this;
     }

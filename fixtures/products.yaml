@@ -1,0 +1,197 @@
+# api/fixtures/products.yaml
+App\Entity\Produit:
+  cappuccino:
+    nom: Cappuccino
+    description: Le cappuccino (de l'italien « petit capucin ») est une préparation de café traditionnel de la cuisine italienne, emblème de la culture italienne dans le monde entier, à base de café expresso, mélangé et coiffé d'une mousse de lait crémeuse (préalablement chauffé à la vapeur jusqu'à le faire mousser), sucré, et servi dans une grande tasse à café, éventuellement avec un effet artistique de latte art.
+    prix: 3.20
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/product1.png
+    categorie: "@cafe"
+
+  cafe_noir:
+    nom: Café noir
+    description: Café servi nature sans lait ou crème et généralement sans sucre, un merveilleux café pour les initiés.
+    prix: 2.50
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/product2.png
+    categorie: "@cafe"
+
+  cafe_nasette:
+    nom: Café noisette
+    description: Le café noisette est un café court tout simple qui vient de la dissolution de café corsé dans de l’eau bouillante. Son nom lui vient de sa couleur noisette lorsqu’il se mélange avec de la mousse de lait.
+    prix: 2.90
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/product3.png
+    categorie: "@cafe"
+
+  mokaccino:
+    nom: Mokaccino
+    description: Le mocaccino (mochhaccino, mochaccino ou mokaccino) est une boisson chaude typiquement italienne composée de cappuccino, de crème et de chocolat, le tout mélangé avec de la poudre de cacao.
+    prix: 3.50
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/product4.png
+    categorie: "@cafe"
+
+  croissant:
+    nom: Croissant
+    description: Certainement la viennoiserie la plus vendu dans les boulangeries françaises c'est une viennoiserie à base d'une pâte levée feuilletée.
+    prix: 0.90
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@viennoiserie"
+
+  pain_au_chocolat:
+    nom: Pain au chocolat
+    description: Aussi appelé chocolatine, couque au chocolat, croissant au chocolat ou encore petit pain, est une viennoiserie constituée d'une pâte levée feuilletée, identique à celle du croissant, rectangulaire et enroulée sur une ou plusieurs barres de chocolat.
+    prix: 1.10
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@viennoiserie"
+
+  pain_aux_raisins:
+    nom: Pain aux raisins
+    description: Viennoiserie en pâte levée briochée garnie de crème pâtissière ou de crème d'amandes et de raisins secs.
+    prix: 1.30
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@viennoiserie"
+
+  chausson_aux_pommes:
+    nom: Chausson aux pommes
+    description: Le plus souvent individuelle, faite d'une abaisse ronde en pâte feuilletée, repliée sur une garniture de compote de fruit, traditionnellement des pommes, qui se mange tiède ou froide.
+    prix: 1.90
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@viennoiserie"
+
+  sandwich_jambon_fromage:
+    nom: Sandwich jambon fromage
+    description: On coupe une belle longueur de baguette, qu'on entrouvre en portefeuille, on tartine de beurre, on ajoute une tranche de jambon et du fromage coupé finement. On referme, et on se régale.
+    prix: 3.90
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  sandwich_poulet_crudites:
+    nom: Sandwich poulet crudités
+    description: Sandwich au pain spécial garni au poulet rôti et crudités, savoureux et croustillant.
+    prix: 4.00
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  sandwich_au_thon:
+    nom: Sandwich au thon
+    description: Rien de tel pour savourer la douceur du soleil qu'un sandwich bien frais, où la saveur du thon ajoutera un air de mer et de vacances.
+    prix: 4.00
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  sandwich_vegetarien:
+    nom: Sandwich vététarien
+    description: Délicieux sandwich végétarien à la fois croustillant et moelleux riche en légumes et en goût parfait pour un déjeuner léger ou pour pour servir à l'apéritif.
+    prix: 3.60
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  salade_cesar:
+    nom: Salade césar
+    description: Que l'on écrive salade César ou Caesar, une chose est sûre les ingrédients de base sont toujours les mêmes c'est à dire une laitue romaine, des œufs durs, quelques croûtons, du parmesan... et bien sûr la sauce César, un grand classique de la gastronomie.
+    prix: 3.80
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  salade_nicoise:
+    nom: Salade niçoise
+    description: Une entrée pleine de vitamines ! Tomates, concombre, oignons frais, poivron, fèves, œufs durs, anchois et olives (bien sûr) donnent toutes les saveurs méditerranéennes...
+    prix: 3.80
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  salade_grecque:
+    nom: Salade grecque
+    description: Salade grecque ou salade crétoise est une recette de cuisine traditionnelle et emblématique de salade composée de la cuisine grecque, à base de tomate, concombre, huile d'olive, origan, feta, olives, oignon, poivron vert, et câpres.
+    prix: 3.80
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  salade_perigourdine:
+    nom: Salade périgourdine
+    description: Une recette incontournable de la gastronomie française. Cette salade gourmande et savoureuse, associe de nombreuses spécialités culinaires du Périgord. Magret de canard, gésiers, foie gras et noix se mêlent dans cette délicieuse recette.
+    prix: 3.80
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@en-cas"
+
+  yaourt_a_la_grecque:
+    nom: Yaourt à la grecque
+    description: La générosité d'un yaourt gourmand et onctueux avec une pointe de fraîcheur, pour un moment de détente unique.
+    prix: 1.00
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@dessert"
+
+  moelleux_au_chocolat:
+    nom: Moelleux au chocolat
+    description: Un vrai supplice pour les gourmands, impossible de lui résister ! Il fond en bouche avec bonheur et pour les fans de chocolat, c'est un régal incontournable.
+    prix: 2.00
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@dessert"
+
+  tartelette_au_citron_meringuee:
+    nom: Tartelette au citron meringuée
+    description: Une acidité suave, très appréciée par les personnes qui aiment les mélanges de saveurs sucrées et acides.
+    prix: 2.50
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@dessert"
+
+  tiramisu:
+    nom: Tiramisu
+    description: Dessert italien crémeux et onctueux que personne ne veut jamais partager. À vos cuillères !
+    prix: 2.30
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@dessert"
+
+  coca_cola:
+    nom: Coca-Cola
+    description: Soda rafraîchissant, son nom provient de deux ingrédients utilisés pour sa composition originelle c'est à dire la feuille de coca et la noix de kola.
+    prix: 1.10
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@boisson-sucree"
+
+  ice_tea:
+    nom: Ice-Tea
+    description: Thé glacé ou thé froid ou ice tea ou iced tea est une recette cosmopolite de boisson rafraîchissante à base de thé froid ou glacé, variante du café glacé.
+    prix: 1.10
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@boisson-sucree"
+
+  orangina:
+    nom: Orangina
+    description: Un subtil mélange de jus d'orange, d'huile essentielle d'orange, de pulpe et de fines bulles rafraîchissantes.
+    prix: 1.10
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@boisson-sucree"
+
+  arizona_green_tea:
+    nom: Arizona Green Tea
+    description: Combine tous les bienfaits pour la santé associés au thé vert et un assortiment de saveurs exotiques, de jus de fruits, de ginseng et de miel pour créer une boisson au goût fantastique qui plaira aux adultes comme aux enfants.
+    prix: 1.30
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@boisson-sucree"
+
+  stickers:
+    nom: Stickers
+    description: Lot de 10 magnifiques stickers.
+    prix: 1.00
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@produit-derives"
+
+  tasse:
+    nom: Tasse
+    description: Tasse aux couleurs de Gusto Coffee.
+    prix: 5.00
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@produit-derives"
+
+  tee-shirt:
+    nom: Tee-shirt
+    description: Tee-shirt fabriqué en tissu maillé, aux couleurs de Gusto Coffee.
+    prix: 9.00
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@produit-derives"
+
+  casquette:
+    nom: Casquette
+    description: Casquette confortable signé Gusto Coffee.
+    prix: 4.50
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/
+    categorie: "@produit-derives"

@@ -1,0 +1,361 @@
+# api/fixtures/places.yaml
+App\Entity\PlaceGrandeSalle:
+  placeA1:
+    nom: A1
+
+  placeA2:
+    nom: A2
+
+  placeA3:
+    nom: A3
+
+  placeB1:
+    nom: B1
+
+  placeB2:
+    nom: B2
+
+  placeB3:
+    nom: B3
+
+  placeC1:
+    nom: C1
+
+  placeC2:
+    nom: C2
+
+  placeC3:
+    nom: C3
+
+  placeC4:
+    nom: C4
+
+  placeC5:
+    nom: C5
+
+  placeC6:
+    nom: C6
+
+  placeD1:
+    nom: D1
+
+  placeD2:
+    nom: D2
+
+  placeD3:
+    nom: D3
+
+  placeD4:
+    nom: D4
+
+  placeD5:
+    nom: D5
+
+  placeD6:
+    nom: D6
+
+  placeE1:
+    nom: E1
+
+  placeE2:
+    nom: E2
+
+  placeE3:
+    nom: E3
+
+  placeE4:
+    nom: E4
+
+  placeE5:
+    nom: E5
+
+  placeE6:
+    nom: E6
+
+  placeF1:
+    nom: F1
+
+  placeF2:
+    nom: F2
+
+  placeF3:
+    nom: F3
+
+  placeF4:
+    nom: F4
+
+  placeG1:
+    nom: G1
+
+  placeG2:
+    nom: G2
+
+  placeG3:
+    nom: G3
+
+  placeG4:
+    nom: G4
+
+  placeH1:
+    nom: H1
+
+  placeH2:
+    nom: H2
+
+  placeH3:
+    nom: H3
+
+  placeH4:
+    nom: H4
+
+  placeH5:
+    nom: H5
+
+  placeH6:
+    nom: H6
+
+  placeI1:
+    nom: I1
+
+  placeI2:
+    nom: I2
+
+  placeI3:
+    nom: I3
+
+  placeI4:
+    nom: I4
+
+  placeI5:
+    nom: I5
+
+  placeI6:
+    nom: I6
+
+  placeJ1:
+    nom: J1
+
+  placeJ2:
+    nom: J2
+
+  placeJ3:
+    nom: J3
+
+  placeJ4:
+    nom: J4
+
+  placeJ5:
+    nom: J5
+
+  placeJ6:
+    nom: J6
+
+  placeK1:
+    nom: K1
+
+  placeK2:
+    nom: K2
+
+  placeK3:
+    nom: K3
+
+  placeK4:
+    nom: K4
+
+  placeL1:
+    nom: L1
+
+  placeL2:
+    nom: L2
+
+  placeL3:
+    nom: L3
+
+  placeL4:
+    nom: L4
+
+  placeM1:
+    nom: M1
+
+  placeM2:
+    nom: M2
+
+  placeM3:
+    nom: M3
+
+  placeM4:
+    nom: M4
+
+  placeM5:
+    nom: M5
+
+  placeM6:
+    nom: M6
+
+  placeM7:
+    nom: M7
+
+  placeM8:
+    nom: M8
+
+  placeN1:
+    nom: N1
+
+  placeN2:
+    nom: N2
+
+  placeN3:
+    nom: N3
+
+  placeN4:
+    nom: N4
+
+  placeO1:
+    nom: O1
+
+  placeO2:
+    nom: O2
+
+  placeO3:
+    nom: O3
+
+  placeO4:
+    nom: O4
+
+  placeP1:
+    nom: P1
+
+  placeP2:
+    nom: P2
+
+  placeP3:
+    nom: P3
+
+  placeP4:
+    nom: P4
+
+  placeQ1:
+    nom: Q1
+
+  placeQ2:
+    nom: Q2
+
+  placeQ3:
+    nom: Q3
+
+  placeQ4:
+    nom: Q4
+
+  placeQ5:
+    nom: Q5
+
+  placeQ6:
+    nom: Q6
+
+  placeQ7:
+    nom: Q7
+
+  placeQ8:
+    nom: Q8
+
+  placeR1:
+    nom: R1
+
+  placeR2:
+    nom: R2
+
+  placeR3:
+    nom: R3
+
+  placeR4:
+    nom: R4
+
+  placeR5:
+    nom: R5
+
+  placeR6:
+    nom: R6
+
+  placeR7:
+    nom: R7
+
+  placeR8:
+    nom: R8
+
+  placeS1:
+    nom: S1
+
+  placeS2:
+    nom: S2
+
+  placeS3:
+    nom: S3
+
+  placeS4:
+    nom: S4
+
+  placeT1:
+    nom: T1
+
+  placeT2:
+    nom: T2
+
+  placeT3:
+    nom: T3
+
+  placeT4:
+    nom: T4
+
+  placeU1:
+    nom: U1
+
+  placeU2:
+    nom: U2
+
+  placeU3:
+    nom: U3
+
+  placeU4:
+    nom: U4
+
+  placeV1:
+    nom: V1
+
+  placeV2:
+    nom: V2
+
+  placeV3:
+    nom: V3
+
+  placeV4:
+    nom: V4
+
+  placeV5:
+    nom: V5
+
+  placeV6:
+    nom: V6
+
+  placeV7:
+    nom: V7
+
+  placeV8:
+    nom: V8
+
+  placeW1:
+    nom: W1
+
+  placeW2:
+    nom: W2
+
+  placeW3:
+    nom: W3
+
+  placeX1:
+    nom: X1
+
+  placeX2:
+    nom: X2
+
+  placeX3:
+    nom: X3

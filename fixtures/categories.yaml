@@ -1,0 +1,19 @@
+# api/fixtures/categories.yaml
+App\Entity\Categorie:
+  cafe:
+    nom: Cafés
+
+  viennoiserie:
+    nom: Viennoiseries
+
+  en-cas:
+    nom: En-cas
+
+  boisson-sucree:
+    nom: Boissons Sucrées
+
+  dessert:
+    nom: Desserts
+
+  produit-derives:
+    nom: Produits Dérivés

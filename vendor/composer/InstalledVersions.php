@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '994b74962e8e963f06febb627cda40f3729ab71a',
+    'reference' => 'ed108cc55c207f7cf54933b495886cc07fab012b',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '994b74962e8e963f06febb627cda40f3729ab71a',
+      'reference' => 'ed108cc55c207f7cf54933b495886cc07fab012b',
     ),
     'api-platform/core' => 
     array (
@@ -96,6 +96,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'a036d90c303f3163b5be8b8fde9b6755b2be4a3a',
+    ),
+    'doctrine/data-fixtures' => 
+    array (
+      'pretty_version' => '1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '51d3d4880d28951fff42a635a2389f8c63baddc5',
     ),
     'doctrine/dbal' => 
     array (
@@ -205,6 +214,15 @@ private static $installed = array (
       ),
       'reference' => '56070bebac6e77230ed7d306ad13528e60732871',
     ),
+    'fakerphp/faker' => 
+    array (
+      'pretty_version' => 'v1.14.1',
+      'version' => '1.14.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ed22aee8d17c7b396f74a58b1e7fefa4f90d5ef1',
+    ),
     'fig/link-util' => 
     array (
       'pretty_version' => '1.1.2',
@@ -222,6 +240,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '006aa5d32f887a4db4353b13b5b5095613e0611f',
+    ),
+    'hautelook/alice-bundle' => 
+    array (
+      'pretty_version' => '2.9.0',
+      'version' => '2.9.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '17c5199b2a6efbc1383b0afe1cddfa3c176b7b6f',
     ),
     'laminas/laminas-code' => 
     array (
@@ -249,6 +276,28 @@ private static $installed = array (
       array (
       ),
       'reference' => '6cccbddfcfc742eb02158d6137ca5687d92cee32',
+    ),
+    'myclabs/deep-copy' => 
+    array (
+      'pretty_version' => '1.10.2',
+      'version' => '1.10.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '776f831124e9c62e1a2c601ecc52e776d8bb7220',
+      'replaced' => 
+      array (
+        0 => '1.10.2',
+      ),
+    ),
+    'nelmio/alice' => 
+    array (
+      'pretty_version' => 'v3.8.2',
+      'version' => '3.8.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b57f4c6f039baa72e2bd5b75fd8de77e1b9228e3',
     ),
     'nelmio/cors-bundle' => 
     array (
@@ -416,6 +465,42 @@ private static $installed = array (
       array (
         0 => '1.0',
       ),
+    ),
+    'sebastian/comparator' => 
+    array (
+      'pretty_version' => '4.0.6',
+      'version' => '4.0.6.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '55f4261989e546dc112258c7a75935a81a7ce382',
+    ),
+    'sebastian/diff' => 
+    array (
+      'pretty_version' => '4.0.4',
+      'version' => '4.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3461e3fccc7cfdfc2720be910d3bd73c69be590d',
+    ),
+    'sebastian/exporter' => 
+    array (
+      'pretty_version' => '4.0.3',
+      'version' => '4.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd89cc98761b8cb5a1a235a6b703ae50d34080e65',
+    ),
+    'sebastian/recursion-context' => 
+    array (
+      'pretty_version' => '4.0.4',
+      'version' => '4.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cd9d8cf3c5804de4341c283ed787f099f5506172',
     ),
     'symfony/asset' => 
     array (
@@ -924,6 +1009,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '3bbcf262fceb3d8f48175302e6ba0ac96e3a5a11',
+    ),
+    'theofidry/alice-data-fixtures' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'bcfdf64bc940eb4a7b40b46d9ca5251e5692cc11',
     ),
     'twig/twig' => 
     array (

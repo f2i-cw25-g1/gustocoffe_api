@@ -1,0 +1,41 @@
+# api/fixtures/salons.yaml
+App\Entity\Salon:
+  salon_cappuccino:
+    nom: Salon Cappuccino
+    nombre_place: 4
+
+  salon_expresso:
+    nom: Salon Expresso
+    nombre_place: 4
+
+  salon_macchiato:
+    nom: Salon Macchiato
+    nombre_place: 4
+
+  salon_lungo:
+    nom: Salon Lungo
+    nombre_place: 4
+
+  salon_leche:
+    nom: Salon Leche
+    nombre_place: 4
+
+  salon_dulcetto:
+    nom: Salon Dulcetto
+    nombre_place: 6
+
+  salon_affogato:
+    nom: Salon Affogato
+    nombre_place: 6
+
+  salon_ambello:
+    nom: Salon Ambello
+    nombre_place: 6
+
+  salon_americain:
+    nom: Salon Americain
+    nombre_place: 6
+
+  salon_noisette:
+    nom: Salon Noisette
+    nombre_place: 6

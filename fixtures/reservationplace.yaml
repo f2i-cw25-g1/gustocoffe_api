@@ -1,0 +1,31 @@
+# api/fixtures/reservationplace.yaml
+App\Entity\ReservationPlace:
+  reservationplace1:
+    date_reservation: <(new DateTime("2021-07-06"))>
+    heure_debut: <(new DateTime("08:00:00"))>
+    heure_fin: <(new DateTime("18:00:00"))>
+    prix: 60
+    option_bureautique: true
+    option_restauration: true
+    place_grande_salle: "@placeA1"
+    facture: "@facture1"
+
+  reservationplace2:
+    date_reservation: <(new DateTime("2021-07-06"))>
+    heure_debut: <(new DateTime("08:00:00"))>
+    heure_fin: <(new DateTime("18:00:00"))>
+    prix: 60
+    option_bureautique: false
+    option_restauration: false
+    place_grande_salle: "@placeA2"
+    facture: "@facture1"
+
+  reservationplace3:
+    date_reservation: <(new DateTime("2021-08-15"))>
+    heure_debut: <(new DateTime("10:00:00"))>
+    heure_fin: <(new DateTime("12:30:00"))>
+    prix: 30
+    option_bureautique: true
+    option_restauration: true
+    place_grande_salle: "@placeC2"
+    facture: "@facture2"

@@ -1,0 +1,41 @@
+# api/fixtures/categories.yaml
+App\Entity\Utilisateur:
+  utilisateur1:
+    email: alexis.reau@gmail.com
+    roles: [admin, user]
+    password: Alexis78220@
+    username: Alexis Réau
+    nom: Réau
+    prenom: Alexis
+    adresse: 3 rue Jean Mermoz
+    code_postal_adresse: 78220
+
+  utilisateur2:
+    email: joseph.françois@gmail.com
+    roles: [user]
+    password: Joseph123@
+    username: Jofr
+    nom: François
+    prenom: Joseph
+    adresse: 10 rue de la Contre Escarpe
+    code_postal_adresse: 75010
+
+  utilisateur3:
+    email: cedric.beausseron@gmail.com
+    roles: [admin, user]
+    password: Password2@
+    username: ced
+    nom: Beausseron
+    prenom: Cédric
+    adresse: ici
+    code_postal_adresse: 31456
+
+  utilisateur4:
+    email: eric.ciccoti@gmail.com
+    roles: [admin, user]
+    password: Eric3000@
+    username: eri
+    nom: Ciccoti
+    prenom: Éric
+    adresse: 90 rue des palmiers jaunes
+    code_postal_adresse: 56070
