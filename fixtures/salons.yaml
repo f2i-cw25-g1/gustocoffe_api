@@ -2,40 +2,60 @@
 App\Entity\Salon:
   salon_cappuccino:
     nom: Salon Cappuccino
+    description: Salle de réunion idéale pour se retrouver en petit comité autour d'un café.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-cappuccino.jpg
     nombre_place: 4
 
   salon_expresso:
     nom: Salon Expresso
+    description: Salon chaleureux pour des réunions détentes.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-expresso.jpg
     nombre_place: 4
 
   salon_macchiato:
     nom: Salon Macchiato
+    description: Banquette confortable pour discuter de nouveaux projets.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-macchiato.jpg
     nombre_place: 4
 
   salon_lungo:
     nom: Salon Lungo
+    description: Salon atypique et chaleureux pour petit comité.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-lungo.jpg
     nombre_place: 4
 
   salon_leche:
     nom: Salon Leche
+    description: Salon spacieux tout équipé pour se retrouver entre collègues.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-leche.jpg
     nombre_place: 4
 
   salon_dulcetto:
     nom: Salon Dulcetto
+    description: Salle de réunion lumineux et équipé.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-dulcetto.jpg
     nombre_place: 6
 
   salon_affogato:
     nom: Salon Affogato
+    description: Salon détente pour se retrouver comme à la maison.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-affogato.jpg
     nombre_place: 6
 
   salon_ambello:
     nom: Salon Ambello
+    description: Salon chic et moderne pour faire bonne impression.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-ambello.jpg
     nombre_place: 6
 
   salon_americain:
     nom: Salon Americain
+    description: Salon studieux pour travailler en équipe dans de bonnes conditions.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-americain.jpg
     nombre_place: 6
 
   salon_noisette:
     nom: Salon Noisette
+    description: Salon fleuri idéal pour travailler au calme.
+    image: https://www.f2i-dev14-gq-gd-fh.fr/img/salon-noisette.jpg
     nombre_place: 6
