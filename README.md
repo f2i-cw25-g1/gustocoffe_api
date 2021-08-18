@@ -10,11 +10,18 @@ Et créer un fichier `.env.local` pour y mettre la ligne suivante (sur WAMP sur 
 
 ### `symfony console doctrine:database:drop --force`
 Suppression de la database
+
 ### `symfony console doctrine:database:create`
 Creation de la database
+
 ### `symfony console make:migration`
-Supprimer les fichiers qui sont dans le dossier 'migrations' avant de faire les migrations
+/!\ Supprimer les fichiers qui sont dans le dossier 'migrations' avant de faire les migrations /!\
+
 ### `symfony console doctrine:migrations:migrate `
 Executions des migrations
+
 ### `php bin/console hautelook:fixtures:load `
 Lancement des fixtures 
+
+Si il y a une erreur, pour vider le cache d'API platform :
+### `php bin/console cache:clear`
