@@ -53,21 +53,21 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(min="4", minMessage="Veuillez saisir un nom d'utilisateur d'au moins 4 caractères")
-     * @Assert\Length(max="20", maxMessage="Veuillez saisir un nom d'utilisateur de 20 caractères maximum")
+     * @Assert\Length(max="10", maxMessage="Veuillez saisir un nom d'utilisateur de 10 caractères maximum")
      */
     private $username;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(min="2", minMessage="Veuillez saisir un nom d'au moins 2 caractères")
-     * @Assert\Length(max="30", maxMessage="Veuillez saisir un nom de 30 caractères maximum")
+     * @Assert\Length(max="20", maxMessage="Veuillez saisir un nom de 20 caractères maximum")
      */
     private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(min="2", minMessage="Veuillez saisir un prénom d'au moins 2 caractères")
-     * @Assert\Length(max="30", maxMessage="Veuillez saisir un prénom de 30 caractères maximum")
+     * @Assert\Length(max="20", maxMessage="Veuillez saisir un prénom de 20 caractères maximum")
      */
     private $prenom;
 
