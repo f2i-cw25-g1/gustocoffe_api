@@ -1,15 +1,26 @@
 # api/fixtures/factures.yaml
 App\Entity\Facture:
   facture1:
+    montant: 200
     date_commande: <(new DateTime("2021-07-06 18:00:00"))>
     adresse_facturation: 3 rue Jean Mermoz
     code_postal_facturation: 78220
     pays_facturation: France
-    utilisateur: "@utilisateur2"
+    utilisateur: "@utilisateur1"
 
   facture2:
+    montant: 35
     date_commande: <(new DateTime("2021-08-14 10:30:00"))>
-    adresse_facturation: 3 rue Jean Mermoz
-    code_postal_facturation: 78220
+    adresse_facturation: 22 rue albert
+    code_postal_facturation: 78000
     pays_facturation: France
     utilisateur: "@utilisateur2"
+    
+  facture3:
+    montant: 400
+    date_commande: <(new DateTime("2021-08-14 10:30:00"))>
+    adresse_facturation: 9 rue des amadouer
+    code_postal_facturation: 92320
+    pays_facturation: France
+    utilisateur: "@utilisateur3"
+

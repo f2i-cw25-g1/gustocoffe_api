@@ -5,22 +5,11 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
-use App\Controller\TestController;
 use App\Repository\ProduitRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ApiResource(
- *  collectionOperations={
- *      "get",
- *      "post",
- *      "testController" ={
- *          "method" = "get",
- *          "path" = "/produits/TestController",
- *          "controller" = TestController::class
- *      }
- *  }
- * )
+ * @ApiResource()
  * @ApiFilter(SearchFilter::class, properties={"categorie"="exact"})
  * @ORM\Entity(repositoryClass=ProduitRepository::class)
  */

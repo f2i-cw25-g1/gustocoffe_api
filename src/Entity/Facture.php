@@ -57,6 +57,11 @@ class Facture
      */
     private $utilisateur;
 
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $montant;
+
     public function __construct()
     {
         $this->listePlacesReservees = new ArrayCollection();
@@ -184,6 +189,18 @@ class Facture
     public function setUtilisateur(?Utilisateur $utilisateur): self
     {
         $this->utilisateur = $utilisateur;
+
+        return $this;
+    }
+
+    public function getMontant(): ?float
+    {
+        return $this->montant;
+    }
+
+    public function setMontant(float $montant): self
+    {
+        $this->montant = $montant;
 
         return $this;
     }
