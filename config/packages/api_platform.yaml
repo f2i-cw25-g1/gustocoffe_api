@@ -7,3 +7,11 @@ api_platform:
         json: ['application/merge-patch+json']
     swagger:
         versions: [3]
+   # The title of the API.
+    title: 'Gusto Coffee - API'
+
+    # The description of the API.
+    description: 'API REST Gusto Coffee [DevProd]'
+
+    # The version of the API.
+    version: '1.0.0'

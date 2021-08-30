@@ -18,7 +18,7 @@ App\Entity\ReservationPlace:
     option_bureautique: false
     option_restauration: false
     place_grande_salle: "@placeA2"
-    facture: "@facture1"
+    facture: "@facture2"
 
   reservationplace3:
     date_reservation: <(new DateTime("2021-08-15"))>
@@ -28,4 +28,4 @@ App\Entity\ReservationPlace:
     option_bureautique: true
     option_restauration: true
     place_grande_salle: "@placeC2"
-    facture: "@facture2"
+    facture: "@facture3"
