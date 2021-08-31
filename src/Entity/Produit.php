@@ -2,47 +2,56 @@
 
 namespace App\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ProduitRepository;
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
-use App\Repository\ProduitRepository;
-use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ApiResource()
- * @ApiFilter(SearchFilter::class, properties={"categorie"="exact"})
+ * @ApiResource(
+ *      normalizationContext={
+ *          "groups"={"produit_READ"}})
+ * @ApiFilter(SearchFilter::class)
  * @ORM\Entity(repositoryClass=ProduitRepository::class)
  */
 class Produit
 {
     /**
      * @ORM\Id
+     * @Groups({"produit_READ","categorie_READ"})
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
+     * @Groups({"produit_READ","categorie_READ"})
      * @ORM\Column(type="string", length=255)
      */
     private $nom;
 
     /**
+     * @Groups({"produit_READ","categorie_READ"})
      * @ORM\Column(type="text")
      */
     private $description;
 
     /**
+     * @Groups({"produit_READ","categorie_READ"})
      * @ORM\Column(type="float")
      */
     private $prix;
 
     /**
+     * @Groups({"produit_READ","categorie_READ"})
      * @ORM\Column(type="text")
      */
     private $image;
 
     /**
+     * @Groups({"produit_READ"})
      * @ORM\ManyToOne(targetEntity=Categorie::class, inversedBy="produits")
      * @ORM\JoinColumn(nullable=false)
      */

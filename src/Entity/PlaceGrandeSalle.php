@@ -2,14 +2,17 @@
 
 namespace App\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\Collection;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\PlaceGrandeSalleRepository;
 use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
-use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *      normalizationContext={
+ *          "groups"={"place_grande_salle_READ"}})
  * @ORM\Entity(repositoryClass=PlaceGrandeSalleRepository::class)
  */
 class PlaceGrandeSalle
@@ -18,16 +21,19 @@ class PlaceGrandeSalle
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"place_grande_salle_READ"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=4)
+     * @Groups({"place_grande_salle_READ"})
      */
     private $nom;
 
     /**
      * @ORM\OneToMany(targetEntity=ReservationPlace::class, mappedBy="place_grande_salle")
+     * @Groups({"place_grande_salle_READ"})
      */
     private $reservationsDeLaPlace;
 

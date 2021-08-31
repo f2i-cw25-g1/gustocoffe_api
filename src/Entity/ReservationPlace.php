@@ -2,14 +2,17 @@
 
 namespace App\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiFilter;
-use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ReservationPlaceRepository;
-use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *      normalizationContext={
+ *          "groups"={"reservation_place_READ"}})
  * @ApiFilter(SearchFilter::class, properties={"date_reservation"="exact"})
  * @ORM\Entity(repositoryClass=ReservationPlaceRepository::class)
  */
@@ -19,48 +22,57 @@ class ReservationPlace
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"reservation_place_READ"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="date")
+     * @Groups({"reservation_place_READ"})
      */
     private $date_reservation;
 
     /**
      * @ORM\Column(type="time")
+     * @Groups({"reservation_place_READ"})
      */
     private $heure_debut;
 
     /**
      * @ORM\Column(type="time")
+     * @Groups({"reservation_place_READ"})
      */
     private $heure_fin;
 
     /**
      * @ORM\Column(type="float")
+     * @Groups({"reservation_place_READ"})
      */
     private $prix;
 
     /**
      * @ORM\ManyToOne(targetEntity=PlaceGrandeSalle::class, inversedBy="reservationsDeLaPlace")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups({"reservation_place_READ"})
      */
     private $place_grande_salle;
 
     /**
      * @ORM\Column(type="boolean")
+     * @Groups({"reservation_place_READ"})
      */
     private $option_bureautique;
 
     /**
      * @ORM\Column(type="boolean")
+     * @Groups({"reservation_place_READ"})
      */
     private $option_restauration;
 
     /**
      * @ORM\ManyToOne(targetEntity=Facture::class, inversedBy="listePlacesReservees")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups({"reservation_place_READ"})
      */
     private $facture;
 
@@ -165,5 +177,4 @@ class ReservationPlace
 
         return $this;
     }
-
 }

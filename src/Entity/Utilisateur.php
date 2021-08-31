@@ -2,17 +2,20 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Core\Annotation\ApiResource;
-use App\Repository\UtilisateurRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
-use Symfony\Component\Security\Core\User\UserInterface;
+use App\Repository\UtilisateurRepository;
+use Doctrine\Common\Collections\Collection;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *      normalizationContext={
+ *          "groups"={"utilisateur_READ"}})
  * @ORM\Entity(repositoryClass=UtilisateurRepository::class)
  */
 class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
@@ -21,6 +24,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"utilisateur_READ"})
      */
     private $id;
 
@@ -28,11 +32,13 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string", length=180, unique=true)
      * @Assert\NotBlank(message = "Merci de saisir votre email")
      * @Assert\Email(message = "L'adresse email '{{ value }}' n'est pas valide.")
+     * @Groups({"utilisateur_READ"})
      */
     private $email;
 
     /**
      * @ORM\Column(type="json")
+     * @Groups({"utilisateur_READ"})
      */
     private $roles = [];
 
@@ -42,11 +48,13 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @Assert\Length(min="8", minMessage="Veuillez saisir un mot de passe d'au moins 8 caractères")
      * @Assert\Length(max="20", maxMessage="Veuillez saisir un mot de passe de 20 caractères maximum")
      * @Assert\NotCompromisedPassword(message="Le mot de passe saisi a déjà fuité sur internet, veuillez saisir un autre mot de passe.")
+     * @Groups({"utilisateur_READ"})
      */
     private $password;
 
     /**
      * @ORM\OneToMany(targetEntity=Facture::class, mappedBy="utilisateur")
+     * @Groups({"utilisateur_READ"})
      */
     private $factures;
 
@@ -54,6 +62,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(min="4", minMessage="Veuillez saisir un nom d'utilisateur d'au moins 4 caractères")
      * @Assert\Length(max="10", maxMessage="Veuillez saisir un nom d'utilisateur de 10 caractères maximum")
+     * @Groups({"utilisateur_READ"})
      */
     private $username;
 
@@ -61,6 +70,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(min="2", minMessage="Veuillez saisir un nom d'au moins 2 caractères")
      * @Assert\Length(max="20", maxMessage="Veuillez saisir un nom de 20 caractères maximum")
+     * @Groups({"utilisateur_READ"})
      */
     private $nom;
 
@@ -68,31 +78,37 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(min="2", minMessage="Veuillez saisir un prénom d'au moins 2 caractères")
      * @Assert\Length(max="20", maxMessage="Veuillez saisir un prénom de 20 caractères maximum")
+     * @Groups({"utilisateur_READ"})
      */
     private $prenom;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"utilisateur_READ"})
      */
     private $adresse;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Groups({"utilisateur_READ"})
      */
     private $code_postal_adresse;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"utilisateur_READ"})
      */
     private $adresse_facturation;
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Groups({"utilisateur_READ"})
      */
     private $code_postal_facturation;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"utilisateur_READ"})
      */
     private $pays_facturation;
 

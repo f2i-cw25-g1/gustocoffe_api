@@ -2,14 +2,17 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Core\Annotation\ApiResource;
-use App\Repository\SalonRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\SalonRepository;
+use Doctrine\Common\Collections\Collection;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *      normalizationContext={
+ *          "groups"={"salon_READ"}})
  * @ORM\Entity(repositoryClass=SalonRepository::class)
  */
 class Salon
@@ -18,31 +21,37 @@ class Salon
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"salon_READ"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"salon_READ"})
      */
     private $nom;
 
     /**
      * @ORM\OneToMany(targetEntity=ReservationSalon::class, mappedBy="salon")
+     * @Groups({"salon_READ"})
      */
     private $reservationsDuSalon;
 
     /**
      * @ORM\Column(type="integer")
+     * @Groups({"salon_READ"})
      */
     private $nombre_place;
 
     /**
      * @ORM\Column(type="text")
+     * @Groups({"salon_READ"})
      */
     private $description;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"salon_READ"})
      */
     private $image;
 

@@ -1,5 +1,26 @@
 # Changelog
 
+## 2.6.5
+
+* Fix various usage of various deprecated methods
+* JsonSchema: Update Hydra `@context` property possible types (#4223)
+* JsonSchema: Add hydra:previous` to the `hydra:view` schema properties (#4310)
+* Filter validation: Fix issue in Required filter validator with dot notation (#4221)
+* OpenAPI: Fix notice/warning for `response` without `content` in the `openapi_context` (#4210)
+* OpenAPI: Do not use output for request body (#4213)
+* OpenAPI: Do not use JSON-lD schema for all media types (#4247) (BC note: `SchemaFactory::buildSchema()` is now immutable as it no longer modifies the passed `$schema`)
+* OpenAPI: Allow setting extensionProperties with YAML schema definition (#4228)
+* OpenAPI: do not throw error with non-standard HTTP verb (#4304)
+* Serializer: Convert internal error to HTTP 400 in Ramsey uuid denormalization from invalid body string (#4200)
+* GraphQL: Fix `FieldsBuilder` not fully unwrapping nested types before deciding if a resolver is needed (#4251)
+* GraphQL: Do not use a resolver for the nested payload of a mutation or subscription (#4289)
+* GraphQL: Allow search filter to use an int for its value (#4295)
+* Varnish: Improve `BAN` regex performance (#4231)
+* MongoDB: Fix denormalization of properties with embeds many that omit target document directive (#4315)
+* MongoDB: Fix resolving proxy class in class metadata factory (#4322)
+* Test: Add `withOptions()` to our HttpClient implementation (#4282)
+* Metadata: Fix allow using constants in XML configuration (resource attribute) (#4321)
+
 ## 2.6.4
 
 * OpenAPI: Using an implicit flow is now valid, changes oauth configuration default values (#4115)
@@ -10,7 +31,7 @@
 * Serializer: Fix denormalization of basic property-types in XML and CSV (#4145)
 * Serializer: Fix denormalization of collection with one element in XML (#4154)
 * JSON Schema: Manage Sequentially and AtLeastOneOf constraints when generating property metadata (#4139 and #4147)
-* JSON Schema: properties regex pattern is now correctly anchored (#4176)
+* JSON Schema: properties regex pattern is now correctly anchored (#4176 and #4198)
 * JSON Schema: Fix PropertySchemaLengthRestriction string-only (#4177)
 * Doctrine: Fix purging HTTP cache for unreadable relations (#3441)
 * Doctrine: Revert #3774 support for binary UUID in search filter (#4134)
@@ -23,7 +44,7 @@
 * GraphQL: Make sure the order of order filters is preserved if nested resources are used (#4171)
 * Metadata: Sort mapping resources (#3256)
 * UUID: manage Ulid in format property schema restriction (#4148)
-* Symfony: Do not override Vary headers already set in the Response
+* Symfony: Do not override Vary headers already set in the Response (#4146)
 * Symfony: Make Twig dependency lazy (#4187)
 * Compatibility with `psr/cache` version 2 and 3 (#4117)
 * Docs: Upgrade Swagger UI to version 3.46.0

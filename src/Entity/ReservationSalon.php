@@ -2,13 +2,17 @@
 
 namespace App\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiFilter;
-use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ReservationSalonRepository;
-use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+
 /**
- * @ApiResource()
+ * @ApiResource(
+ *      normalizationContext={
+ *          "groups"={"reservation_salon_READ"}})
  * @ApiFilter(SearchFilter::class, properties={"date_reservation"="exact"})
  * @ORM\Entity(repositoryClass=ReservationSalonRepository::class)
  */
@@ -18,48 +22,57 @@ class ReservationSalon
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"reservation_salon_READ"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="date")
+     * @Groups({"reservation_salon_READ"})
      */
     private $date_reservation;
 
     /**
      * @ORM\Column(type="time")
+     * @Groups({"reservation_salon_READ"})
      */
     private $heure_debut;
 
     /**
      * @ORM\Column(type="time")
+     * @Groups({"reservation_salon_READ"})
      */
     private $heure_fin;
 
     /**
      * @ORM\Column(type="float")
+     * @Groups({"reservation_salon_READ"})
      */
     private $prix;
 
     /**
      * @ORM\ManyToOne(targetEntity=Salon::class, inversedBy="reservationsDuSalon")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups({"reservation_salon_READ"})
      */
     private $salon;
 
     /**
      * @ORM\Column(type="boolean")
+     * @Groups({"reservation_salon_READ"})
      */
     private $option_bureautique;
 
     /**
      * @ORM\Column(type="boolean")
+     * @Groups({"reservation_salon_READ"})
      */
     private $option_restauration;
 
     /**
      * @ORM\ManyToOne(targetEntity=Facture::class, inversedBy="listeSalonsReserves")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups({"reservation_salon_READ"})
      */
     private $facture;
 
