@@ -23,10 +23,16 @@ services:
             - '../src/Kernel.php'
             - '../src/Tests/'
 
-    AppBundle\Faker\Provider\HashPasswordProvider: ~
+    App\Faker\Processor\UserProcessor:
+        arguments:
+          - '@security.user_password_hasher'
+        tags: [ { name: fidry_alice_data_fixtures.processor } ]
+
     App\Events\Subscriber:
             tags:
             - {name: kernel.event_listener, event: lexit_jwt_authentication.on_jwt_created,methods: updateJwtData}
+
+
             
 
             

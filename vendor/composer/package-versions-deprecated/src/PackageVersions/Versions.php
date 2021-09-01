@@ -117,6 +117,7 @@ final class Versions
   'symfony/var-dumper' => 'v5.3.7@3ad5af4aed07d0a0201bbcfc42658fe6c5b2fb8f',
   'symfony/var-exporter' => 'v5.3.7@2ded877ab0574d8b646f4eb3f716f8ed7ee7f392',
   'symfony/web-link' => 'v5.3.4@0075c9949c30a61d9b9e7483686d72d261480ef1',
+  'symfony/webpack-encore-bundle' => 'v1.12.0@9943a59f8551b7a8181e19a2b4efa60e5907c667',
   'symfony/yaml' => 'v5.3.6@4500fe63dc9c6ffc32d3b1cb0448c329f9c814b7',
   'twig/twig' => 'v3.3.2@21578f00e83d4a82ecfa3d50752b609f13de6790',
   'webmozart/assert' => '1.10.0@6964c76c7804814a842473e0c8fd15bab0f18e25',
@@ -133,10 +134,10 @@ final class Versions
   'sebastian/recursion-context' => '4.0.4@cd9d8cf3c5804de4341c283ed787f099f5506172',
   'symfony/maker-bundle' => 'v1.33.0@f093d906c667cba7e3f74487d9e5e55aaf25a031',
   'theofidry/alice-data-fixtures' => '1.4.0@bcfdf64bc940eb4a7b40b46d9ca5251e5692cc11',
-  'symfony/polyfill-ctype' => '*@61e0cb6ccfaf303eac33f3197b1dc2a3c3080c02',
-  'symfony/polyfill-iconv' => '*@61e0cb6ccfaf303eac33f3197b1dc2a3c3080c02',
-  'symfony/polyfill-php72' => '*@61e0cb6ccfaf303eac33f3197b1dc2a3c3080c02',
-  '__root__' => 'dev-main@61e0cb6ccfaf303eac33f3197b1dc2a3c3080c02',
+  'symfony/polyfill-ctype' => '*@a51ae9dcac45a8766b69f0ad2cc2853abc4b8ce2',
+  'symfony/polyfill-iconv' => '*@a51ae9dcac45a8766b69f0ad2cc2853abc4b8ce2',
+  'symfony/polyfill-php72' => '*@a51ae9dcac45a8766b69f0ad2cc2853abc4b8ce2',
+  '__root__' => 'dev-main@a51ae9dcac45a8766b69f0ad2cc2853abc4b8ce2',
 );
 
     private function __construct()

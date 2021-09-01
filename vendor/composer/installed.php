@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '61e0cb6ccfaf303eac33f3197b1dc2a3c3080c02',
+    'reference' => 'a51ae9dcac45a8766b69f0ad2cc2853abc4b8ce2',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '61e0cb6ccfaf303eac33f3197b1dc2a3c3080c02',
+      'reference' => 'a51ae9dcac45a8766b69f0ad2cc2853abc4b8ce2',
     ),
     'api-platform/core' => 
     array (
@@ -1004,6 +1004,15 @@
       array (
       ),
       'reference' => '0075c9949c30a61d9b9e7483686d72d261480ef1',
+    ),
+    'symfony/webpack-encore-bundle' => 
+    array (
+      'pretty_version' => 'v1.12.0',
+      'version' => '1.12.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9943a59f8551b7a8181e19a2b4efa60e5907c667',
     ),
     'symfony/yaml' => 
     array (

@@ -3,7 +3,7 @@ App\Entity\User:
   User1:
     email: alexis.reau@gmail.com
     roles: [admin, user]
-    password: <passwordHash("password123*")>
+    password: password123*
     nom: Réau
     prenom: Alexis
     adresse: 3 rue Jean Mermoz
