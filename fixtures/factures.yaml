@@ -6,7 +6,7 @@ App\Entity\Facture:
     adresse_facturation: 3 rue Jean Mermoz
     code_postal_facturation: 78220
     pays_facturation: France
-    utilisateur: "@utilisateur1"
+    user: "@User1"
 
   facture2:
     montant: 35
@@ -14,7 +14,7 @@ App\Entity\Facture:
     adresse_facturation: 22 rue albert
     code_postal_facturation: 78000
     pays_facturation: France
-    utilisateur: "@utilisateur2"
+    user: "@User2"
     
   facture3:
     montant: 400
@@ -22,5 +22,5 @@ App\Entity\Facture:
     adresse_facturation: 9 rue des amadouer
     code_postal_facturation: 92320
     pays_facturation: France
-    utilisateur: "@utilisateur3"
+    user: "@User3"
 

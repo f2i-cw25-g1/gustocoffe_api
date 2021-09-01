@@ -6,7 +6,7 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
 {
-    public static $files = array (
+    public static $files = array(
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
@@ -20,21 +20,21 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
         '3722f872abd441c379baeab7b88038ba' => __DIR__ . '/..' . '/nelmio/alice/src/deep_clone.php',
     );
 
-    public static $prefixLengthsPsr4 = array (
-        'p' => 
-        array (
+    public static $prefixLengthsPsr4 = array(
+        'p' =>
+        array(
             'phpDocumentor\\Reflection\\' => 25,
         ),
-        'W' => 
-        array (
+        'W' =>
+        array(
             'Webmozart\\Assert\\' => 17,
         ),
-        'T' => 
-        array (
+        'T' =>
+        array(
             'Twig\\' => 5,
         ),
-        'S' => 
-        array (
+        'S' =>
+        array(
             'Symfony\\Runtime\\Symfony\\Component\\' => 34,
             'Symfony\\Polyfill\\Php81\\' => 23,
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -87,8 +87,8 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
             'Symfony\\Bridge\\ProxyManager\\' => 28,
             'Symfony\\Bridge\\Doctrine\\' => 24,
         ),
-        'P' => 
-        array (
+        'P' =>
+        array(
             'Psr\\Log\\' => 8,
             'Psr\\Link\\' => 9,
             'Psr\\EventDispatcher\\' => 20,
@@ -98,28 +98,32 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
             'PhpParser\\' => 10,
             'PackageVersions\\' => 16,
         ),
-        'N' => 
-        array (
+        'N' =>
+        array(
             'Nelmio\\CorsBundle\\' => 18,
             'Nelmio\\Alice\\' => 13,
             'Negotiation\\' => 12,
+            'Namshi\\JOSE\\' => 12,
         ),
-        'L' => 
-        array (
+        'L' =>
+        array(
+            'Lexik\\Bundle\\JWTAuthenticationBundle\\' => 37,
+            'Lcobucci\\JWT\\' => 13,
+            'Lcobucci\\Clock\\' => 15,
             'Laminas\\Code\\' => 13,
         ),
-        'H' => 
-        array (
+        'H' =>
+        array(
             'Hautelook\\AliceBundle\\' => 22,
         ),
-        'F' => 
-        array (
+        'F' =>
+        array(
             'Fig\\Link\\' => 9,
             'Fidry\\AliceDataFixtures\\' => 24,
             'Faker\\' => 6,
         ),
-        'D' => 
-        array (
+        'D' =>
+        array(
             'Doctrine\\SqlFormatter\\' => 22,
             'Doctrine\\Persistence\\' => 21,
             'Doctrine\\ORM\\' => 13,
@@ -138,382 +142,398 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
             'DeepCopy\\' => 9,
         ),
-        'A' => 
-        array (
+        'A' =>
+        array(
             'App\\Tests\\' => 10,
             'App\\' => 4,
             'ApiPlatform\\Core\\' => 17,
         ),
     );
 
-    public static $prefixDirsPsr4 = array (
-        'phpDocumentor\\Reflection\\' => 
-        array (
+    public static $prefixDirsPsr4 = array(
+        'phpDocumentor\\Reflection\\' =>
+        array(
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
-        'Webmozart\\Assert\\' => 
-        array (
+        'Webmozart\\Assert\\' =>
+        array(
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'Twig\\' => 
-        array (
+        'Twig\\' =>
+        array(
             0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
-        'Symfony\\Runtime\\Symfony\\Component\\' => 
-        array (
+        'Symfony\\Runtime\\Symfony\\Component\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/runtime/Internal',
         ),
-        'Symfony\\Polyfill\\Php81\\' => 
-        array (
+        'Symfony\\Polyfill\\Php81\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/polyfill-php81',
         ),
-        'Symfony\\Polyfill\\Php80\\' => 
-        array (
+        'Symfony\\Polyfill\\Php80\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Php73\\' => 
-        array (
+        'Symfony\\Polyfill\\Php73\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
-        array (
+        'Symfony\\Polyfill\\Mbstring\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
-        array (
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
-        array (
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Flex\\' => 
-        array (
+        'Symfony\\Flex\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/flex/src',
         ),
-        'Symfony\\Contracts\\Translation\\' => 
-        array (
+        'Symfony\\Contracts\\Translation\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
-        'Symfony\\Contracts\\Service\\' => 
-        array (
+        'Symfony\\Contracts\\Service\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\HttpClient\\' => 
-        array (
+        'Symfony\\Contracts\\HttpClient\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/http-client-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
-        array (
+        'Symfony\\Contracts\\EventDispatcher\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
-        'Symfony\\Contracts\\Cache\\' => 
-        array (
+        'Symfony\\Contracts\\Cache\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/cache-contracts',
         ),
-        'Symfony\\Component\\Yaml\\' => 
-        array (
+        'Symfony\\Component\\Yaml\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Symfony\\Component\\WebLink\\' => 
-        array (
+        'Symfony\\Component\\WebLink\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/web-link',
         ),
-        'Symfony\\Component\\VarExporter\\' => 
-        array (
+        'Symfony\\Component\\VarExporter\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/var-exporter',
         ),
-        'Symfony\\Component\\VarDumper\\' => 
-        array (
+        'Symfony\\Component\\VarDumper\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Symfony\\Component\\Validator\\' => 
-        array (
+        'Symfony\\Component\\Validator\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/validator',
         ),
-        'Symfony\\Component\\String\\' => 
-        array (
+        'Symfony\\Component\\String\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\Stopwatch\\' => 
-        array (
+        'Symfony\\Component\\Stopwatch\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/stopwatch',
         ),
-        'Symfony\\Component\\Serializer\\' => 
-        array (
+        'Symfony\\Component\\Serializer\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/serializer',
         ),
-        'Symfony\\Component\\Security\\Http\\' => 
-        array (
+        'Symfony\\Component\\Security\\Http\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/security-http',
         ),
-        'Symfony\\Component\\Security\\Guard\\' => 
-        array (
+        'Symfony\\Component\\Security\\Guard\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/security-guard',
         ),
-        'Symfony\\Component\\Security\\Csrf\\' => 
-        array (
+        'Symfony\\Component\\Security\\Csrf\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/security-csrf',
         ),
-        'Symfony\\Component\\Security\\Core\\' => 
-        array (
+        'Symfony\\Component\\Security\\Core\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/security-core',
         ),
-        'Symfony\\Component\\Runtime\\' => 
-        array (
+        'Symfony\\Component\\Runtime\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/runtime',
         ),
-        'Symfony\\Component\\Routing\\' => 
-        array (
+        'Symfony\\Component\\Routing\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/routing',
         ),
-        'Symfony\\Component\\PropertyInfo\\' => 
-        array (
+        'Symfony\\Component\\PropertyInfo\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/property-info',
         ),
-        'Symfony\\Component\\PropertyAccess\\' => 
-        array (
+        'Symfony\\Component\\PropertyAccess\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/property-access',
         ),
-        'Symfony\\Component\\PasswordHasher\\' => 
-        array (
+        'Symfony\\Component\\PasswordHasher\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/password-hasher',
         ),
-        'Symfony\\Component\\HttpKernel\\' => 
-        array (
+        'Symfony\\Component\\HttpKernel\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/http-kernel',
         ),
-        'Symfony\\Component\\HttpFoundation\\' => 
-        array (
+        'Symfony\\Component\\HttpFoundation\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Symfony\\Component\\HttpClient\\' => 
-        array (
+        'Symfony\\Component\\HttpClient\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/http-client',
         ),
-        'Symfony\\Component\\Finder\\' => 
-        array (
+        'Symfony\\Component\\Finder\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/finder',
         ),
-        'Symfony\\Component\\Filesystem\\' => 
-        array (
+        'Symfony\\Component\\Filesystem\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/filesystem',
         ),
-        'Symfony\\Component\\ExpressionLanguage\\' => 
-        array (
+        'Symfony\\Component\\ExpressionLanguage\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/expression-language',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
-        array (
+        'Symfony\\Component\\EventDispatcher\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Symfony\\Component\\ErrorHandler\\' => 
-        array (
+        'Symfony\\Component\\ErrorHandler\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/error-handler',
         ),
-        'Symfony\\Component\\Dotenv\\' => 
-        array (
+        'Symfony\\Component\\Dotenv\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/dotenv',
         ),
-        'Symfony\\Component\\DependencyInjection\\' => 
-        array (
+        'Symfony\\Component\\DependencyInjection\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/dependency-injection',
         ),
-        'Symfony\\Component\\Console\\' => 
-        array (
+        'Symfony\\Component\\Console\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Symfony\\Component\\Config\\' => 
-        array (
+        'Symfony\\Component\\Config\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
-        'Symfony\\Component\\Cache\\' => 
-        array (
+        'Symfony\\Component\\Cache\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/cache',
         ),
-        'Symfony\\Component\\Asset\\' => 
-        array (
+        'Symfony\\Component\\Asset\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/asset',
         ),
-        'Symfony\\Bundle\\TwigBundle\\' => 
-        array (
+        'Symfony\\Bundle\\TwigBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/twig-bundle',
         ),
-        'Symfony\\Bundle\\SecurityBundle\\' => 
-        array (
+        'Symfony\\Bundle\\SecurityBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/security-bundle',
         ),
-        'Symfony\\Bundle\\MakerBundle\\' => 
-        array (
+        'Symfony\\Bundle\\MakerBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/maker-bundle/src',
         ),
-        'Symfony\\Bundle\\FrameworkBundle\\' => 
-        array (
+        'Symfony\\Bundle\\FrameworkBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/framework-bundle',
         ),
-        'Symfony\\Bridge\\Twig\\' => 
-        array (
+        'Symfony\\Bridge\\Twig\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/twig-bridge',
         ),
-        'Symfony\\Bridge\\ProxyManager\\' => 
-        array (
+        'Symfony\\Bridge\\ProxyManager\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/proxy-manager-bridge',
         ),
-        'Symfony\\Bridge\\Doctrine\\' => 
-        array (
+        'Symfony\\Bridge\\Doctrine\\' =>
+        array(
             0 => __DIR__ . '/..' . '/symfony/doctrine-bridge',
         ),
-        'Psr\\Log\\' => 
-        array (
+        'Psr\\Log\\' =>
+        array(
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
-        'Psr\\Link\\' => 
-        array (
+        'Psr\\Link\\' =>
+        array(
             0 => __DIR__ . '/..' . '/psr/link/src',
         ),
-        'Psr\\EventDispatcher\\' => 
-        array (
+        'Psr\\EventDispatcher\\' =>
+        array(
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
-        'Psr\\Container\\' => 
-        array (
+        'Psr\\Container\\' =>
+        array(
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Cache\\' => 
-        array (
+        'Psr\\Cache\\' =>
+        array(
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
-        'ProxyManager\\' => 
-        array (
+        'ProxyManager\\' =>
+        array(
             0 => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager',
         ),
-        'PhpParser\\' => 
-        array (
+        'PhpParser\\' =>
+        array(
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'PackageVersions\\' => 
-        array (
+        'PackageVersions\\' =>
+        array(
             0 => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions',
         ),
-        'Nelmio\\CorsBundle\\' => 
-        array (
+        'Nelmio\\CorsBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/nelmio/cors-bundle',
         ),
-        'Nelmio\\Alice\\' => 
-        array (
+        'Nelmio\\Alice\\' =>
+        array(
             0 => __DIR__ . '/..' . '/nelmio/alice/src',
         ),
-        'Negotiation\\' => 
-        array (
+        'Negotiation\\' =>
+        array(
             0 => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation',
         ),
-        'Laminas\\Code\\' => 
-        array (
+        'Namshi\\JOSE\\' =>
+        array(
+            0 => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE',
+        ),
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\' =>
+        array(
+            0 => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle',
+        ),
+        'Lcobucci\\JWT\\' =>
+        array(
+            0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
+        ),
+        'Lcobucci\\Clock\\' =>
+        array(
+            0 => __DIR__ . '/..' . '/lcobucci/clock/src',
+        ),
+        'Laminas\\Code\\' =>
+        array(
             0 => __DIR__ . '/..' . '/laminas/laminas-code/src',
         ),
-        'Hautelook\\AliceBundle\\' => 
-        array (
+        'Hautelook\\AliceBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/hautelook/alice-bundle/src',
         ),
-        'Fig\\Link\\' => 
-        array (
+        'Fig\\Link\\' =>
+        array(
             0 => __DIR__ . '/..' . '/fig/link-util/src',
         ),
-        'Fidry\\AliceDataFixtures\\' => 
-        array (
+        'Fidry\\AliceDataFixtures\\' =>
+        array(
             0 => __DIR__ . '/..' . '/theofidry/alice-data-fixtures/src',
         ),
-        'Faker\\' => 
-        array (
+        'Faker\\' =>
+        array(
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
-        'Doctrine\\SqlFormatter\\' => 
-        array (
+        'Doctrine\\SqlFormatter\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/sql-formatter/src',
         ),
-        'Doctrine\\Persistence\\' => 
-        array (
+        'Doctrine\\Persistence\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence',
         ),
-        'Doctrine\\ORM\\' => 
-        array (
+        'Doctrine\\ORM\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/orm/lib/Doctrine/ORM',
         ),
-        'Doctrine\\Migrations\\' => 
-        array (
+        'Doctrine\\Migrations\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/migrations/lib/Doctrine/Migrations',
         ),
-        'Doctrine\\Instantiator\\' => 
-        array (
+        'Doctrine\\Instantiator\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
-        'Doctrine\\Inflector\\' => 
-        array (
+        'Doctrine\\Inflector\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
-        'Doctrine\\Deprecations\\' => 
-        array (
+        'Doctrine\\Deprecations\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
         ),
-        'Doctrine\\DBAL\\' => 
-        array (
+        'Doctrine\\DBAL\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/dbal/lib/Doctrine/DBAL',
         ),
-        'Doctrine\\Common\\Lexer\\' => 
-        array (
+        'Doctrine\\Common\\Lexer\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
         ),
-        'Doctrine\\Common\\DataFixtures\\' => 
-        array (
+        'Doctrine\\Common\\DataFixtures\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures',
         ),
-        'Doctrine\\Common\\Collections\\' => 
-        array (
+        'Doctrine\\Common\\Collections\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
         ),
-        'Doctrine\\Common\\Cache\\' => 
-        array (
+        'Doctrine\\Common\\Cache\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
         ),
-        'Doctrine\\Common\\Annotations\\' => 
-        array (
+        'Doctrine\\Common\\Annotations\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
-        'Doctrine\\Common\\' => 
-        array (
+        'Doctrine\\Common\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
             1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
         ),
-        'Doctrine\\Bundle\\MigrationsBundle\\' => 
-        array (
+        'Doctrine\\Bundle\\MigrationsBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/doctrine-migrations-bundle',
         ),
-        'Doctrine\\Bundle\\DoctrineBundle\\' => 
-        array (
+        'Doctrine\\Bundle\\DoctrineBundle\\' =>
+        array(
             0 => __DIR__ . '/..' . '/doctrine/doctrine-bundle',
         ),
-        'DeepCopy\\' => 
-        array (
+        'DeepCopy\\' =>
+        array(
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'App\\Tests\\' => 
-        array (
+        'App\\Tests\\' =>
+        array(
             0 => __DIR__ . '/../..' . '/tests',
         ),
-        'App\\' => 
-        array (
+        'App\\' =>
+        array(
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'ApiPlatform\\Core\\' => 
-        array (
+        'ApiPlatform\\Core\\' =>
+        array(
             0 => __DIR__ . '/..' . '/api-platform/core/src',
         ),
     );
 
-    public static $classMap = array (
+    public static $classMap = array(
         'ApiPlatform\\Core\\Action\\EntrypointAction' => __DIR__ . '/..' . '/api-platform/core/src/Action/EntrypointAction.php',
         'ApiPlatform\\Core\\Action\\ExceptionAction' => __DIR__ . '/..' . '/api-platform/core/src/Action/ExceptionAction.php',
         'ApiPlatform\\Core\\Action\\NotFoundAction' => __DIR__ . '/..' . '/api-platform/core/src/Action/NotFoundAction.php',
@@ -1016,7 +1036,6 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
         'App\\Entity\\ReservationPlace' => __DIR__ . '/../..' . '/src/Entity/ReservationPlace.php',
         'App\\Entity\\ReservationSalon' => __DIR__ . '/../..' . '/src/Entity/ReservationSalon.php',
         'App\\Entity\\Salon' => __DIR__ . '/../..' . '/src/Entity/Salon.php',
-        'App\\Entity\\Utilisateur' => __DIR__ . '/../..' . '/src/Entity/Utilisateur.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'App\\Repository\\CategorieRepository' => __DIR__ . '/../..' . '/src/Repository/CategorieRepository.php',
         'App\\Repository\\FactureRepository' => __DIR__ . '/../..' . '/src/Repository/FactureRepository.php',
@@ -1025,7 +1044,6 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
         'App\\Repository\\ReservationPlaceRepository' => __DIR__ . '/../..' . '/src/Repository/ReservationPlaceRepository.php',
         'App\\Repository\\ReservationSalonRepository' => __DIR__ . '/../..' . '/src/Repository/ReservationSalonRepository.php',
         'App\\Repository\\SalonRepository' => __DIR__ . '/../..' . '/src/Repository/SalonRepository.php',
-        'App\\Repository\\UtilisateurRepository' => __DIR__ . '/../..' . '/src/Repository/UtilisateurRepository.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
@@ -2756,6 +2774,166 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
         'Laminas\\Code\\Reflection\\PropertyReflection' => __DIR__ . '/..' . '/laminas/laminas-code/src/Reflection/PropertyReflection.php',
         'Laminas\\Code\\Reflection\\ReflectionInterface' => __DIR__ . '/..' . '/laminas/laminas-code/src/Reflection/ReflectionInterface.php',
         'Laminas\\Code\\Scanner\\DocBlockScanner' => __DIR__ . '/..' . '/laminas/laminas-code/src/Scanner/DocBlockScanner.php',
+        'Lcobucci\\Clock\\Clock' => __DIR__ . '/..' . '/lcobucci/clock/src/Clock.php',
+        'Lcobucci\\Clock\\FrozenClock' => __DIR__ . '/..' . '/lcobucci/clock/src/FrozenClock.php',
+        'Lcobucci\\Clock\\SystemClock' => __DIR__ . '/..' . '/lcobucci/clock/src/SystemClock.php',
+        'Lcobucci\\JWT\\Builder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Builder.php',
+        'Lcobucci\\JWT\\ClaimsFormatter' => __DIR__ . '/..' . '/lcobucci/jwt/src/ClaimsFormatter.php',
+        'Lcobucci\\JWT\\Configuration' => __DIR__ . '/..' . '/lcobucci/jwt/src/Configuration.php',
+        'Lcobucci\\JWT\\Decoder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Decoder.php',
+        'Lcobucci\\JWT\\Encoder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Encoder.php',
+        'Lcobucci\\JWT\\Encoding\\CannotDecodeContent' => __DIR__ . '/..' . '/lcobucci/jwt/src/Encoding/CannotDecodeContent.php',
+        'Lcobucci\\JWT\\Encoding\\CannotEncodeContent' => __DIR__ . '/..' . '/lcobucci/jwt/src/Encoding/CannotEncodeContent.php',
+        'Lcobucci\\JWT\\Encoding\\ChainedFormatter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Encoding/ChainedFormatter.php',
+        'Lcobucci\\JWT\\Encoding\\JoseEncoder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Encoding/JoseEncoder.php',
+        'Lcobucci\\JWT\\Encoding\\MicrosecondBasedDateConversion' => __DIR__ . '/..' . '/lcobucci/jwt/src/Encoding/MicrosecondBasedDateConversion.php',
+        'Lcobucci\\JWT\\Encoding\\UnifyAudience' => __DIR__ . '/..' . '/lcobucci/jwt/src/Encoding/UnifyAudience.php',
+        'Lcobucci\\JWT\\Exception' => __DIR__ . '/..' . '/lcobucci/jwt/src/Exception.php',
+        'Lcobucci\\JWT\\Parser' => __DIR__ . '/..' . '/lcobucci/jwt/src/Parser.php',
+        'Lcobucci\\JWT\\Signer' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer.php',
+        'Lcobucci\\JWT\\Signer\\CannotSignPayload' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/CannotSignPayload.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\ConversionFailed' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/ConversionFailed.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\MultibyteStringConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/MultibyteStringConverter.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php',
+        'Lcobucci\\JWT\\Signer\\Ecdsa\\SignatureConverter' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Ecdsa/SignatureConverter.php',
+        'Lcobucci\\JWT\\Signer\\Hmac' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac.php',
+        'Lcobucci\\JWT\\Signer\\Hmac\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha256.php',
+        'Lcobucci\\JWT\\Signer\\Hmac\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha384.php',
+        'Lcobucci\\JWT\\Signer\\Hmac\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Hmac/Sha512.php',
+        'Lcobucci\\JWT\\Signer\\InvalidKeyProvided' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/InvalidKeyProvided.php',
+        'Lcobucci\\JWT\\Signer\\Key' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Key.php',
+        'Lcobucci\\JWT\\Signer\\Key\\FileCouldNotBeRead' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Key/FileCouldNotBeRead.php',
+        'Lcobucci\\JWT\\Signer\\Key\\InMemory' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Key/InMemory.php',
+        'Lcobucci\\JWT\\Signer\\Key\\LocalFileReference' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Key/LocalFileReference.php',
+        'Lcobucci\\JWT\\Signer\\None' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/None.php',
+        'Lcobucci\\JWT\\Signer\\OpenSSL' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/OpenSSL.php',
+        'Lcobucci\\JWT\\Signer\\Rsa' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa.php',
+        'Lcobucci\\JWT\\Signer\\Rsa\\Sha256' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha256.php',
+        'Lcobucci\\JWT\\Signer\\Rsa\\Sha384' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha384.php',
+        'Lcobucci\\JWT\\Signer\\Rsa\\Sha512' => __DIR__ . '/..' . '/lcobucci/jwt/src/Signer/Rsa/Sha512.php',
+        'Lcobucci\\JWT\\Token' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token.php',
+        'Lcobucci\\JWT\\Token\\Builder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/Builder.php',
+        'Lcobucci\\JWT\\Token\\DataSet' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/DataSet.php',
+        'Lcobucci\\JWT\\Token\\InvalidTokenStructure' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/InvalidTokenStructure.php',
+        'Lcobucci\\JWT\\Token\\Parser' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/Parser.php',
+        'Lcobucci\\JWT\\Token\\Plain' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/Plain.php',
+        'Lcobucci\\JWT\\Token\\RegisteredClaimGiven' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/RegisteredClaimGiven.php',
+        'Lcobucci\\JWT\\Token\\RegisteredClaims' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/RegisteredClaims.php',
+        'Lcobucci\\JWT\\Token\\Signature' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/Signature.php',
+        'Lcobucci\\JWT\\Token\\UnsupportedHeaderFound' => __DIR__ . '/..' . '/lcobucci/jwt/src/Token/UnsupportedHeaderFound.php',
+        'Lcobucci\\JWT\\Validation\\Constraint' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint.php',
+        'Lcobucci\\JWT\\Validation\\ConstraintViolation' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/ConstraintViolation.php',
+        'Lcobucci\\JWT\\Validation\\Constraint\\IdentifiedBy' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint/IdentifiedBy.php',
+        'Lcobucci\\JWT\\Validation\\Constraint\\IssuedBy' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint/IssuedBy.php',
+        'Lcobucci\\JWT\\Validation\\Constraint\\LeewayCannotBeNegative' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint/LeewayCannotBeNegative.php',
+        'Lcobucci\\JWT\\Validation\\Constraint\\PermittedFor' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint/PermittedFor.php',
+        'Lcobucci\\JWT\\Validation\\Constraint\\RelatedTo' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint/RelatedTo.php',
+        'Lcobucci\\JWT\\Validation\\Constraint\\SignedWith' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint/SignedWith.php',
+        'Lcobucci\\JWT\\Validation\\Constraint\\ValidAt' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Constraint/ValidAt.php',
+        'Lcobucci\\JWT\\Validation\\NoConstraintsGiven' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/NoConstraintsGiven.php',
+        'Lcobucci\\JWT\\Validation\\RequiredConstraintsViolated' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/RequiredConstraintsViolated.php',
+        'Lcobucci\\JWT\\Validation\\Validator' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validation/Validator.php',
+        'Lcobucci\\JWT\\Validator' => __DIR__ . '/..' . '/lcobucci/jwt/src/Validator.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Command\\CheckConfigCommand' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Command/CheckConfigCommand.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Command\\GenerateKeyPairCommand' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Command/GenerateKeyPairCommand.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Command\\GenerateTokenCommand' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Command/GenerateTokenCommand.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\DependencyInjection\\Compiler\\DeprecateLegacyGuardAuthenticatorPass' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/DependencyInjection/Compiler/DeprecateLegacyGuardAuthenticatorPass.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\DependencyInjection\\Compiler\\WireGenerateTokenCommandPass' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/DependencyInjection/Compiler/WireGenerateTokenCommandPass.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/DependencyInjection/Configuration.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\DependencyInjection\\LexikJWTAuthenticationExtension' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/DependencyInjection/LexikJWTAuthenticationExtension.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\DependencyInjection\\Security\\Factory\\JWTAuthenticatorFactory' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/DependencyInjection/Security/Factory/JWTAuthenticatorFactory.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\DependencyInjection\\Security\\Factory\\JWTFactory' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/DependencyInjection/Security/Factory/JWTFactory.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\DependencyInjection\\Security\\Factory\\JWTUserFactory' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/DependencyInjection/Security/Factory/JWTUserFactory.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Encoder\\DefaultEncoder' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Encoder/DefaultEncoder.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Encoder\\HeaderAwareJWTEncoderInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Encoder/HeaderAwareJWTEncoderInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Encoder\\JWTEncoderInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Encoder/JWTEncoderInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Encoder\\LcobucciJWTEncoder' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Encoder/LcobucciJWTEncoder.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\AuthenticationFailureEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/AuthenticationFailureEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\AuthenticationSuccessEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/AuthenticationSuccessEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTAuthenticatedEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTAuthenticatedEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTCreatedEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTCreatedEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTDecodedEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTDecodedEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTEncodedEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTEncodedEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTExpiredEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTExpiredEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTFailureEventInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTFailureEventInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTInvalidEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTInvalidEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Event\\JWTNotFoundEvent' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Event/JWTNotFoundEvent.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Events' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Events.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\ExpiredTokenException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/ExpiredTokenException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\InvalidPayloadException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/InvalidPayloadException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\InvalidTokenException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/InvalidTokenException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\JWTDecodeFailureException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/JWTDecodeFailureException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\JWTEncodeFailureException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/JWTEncodeFailureException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\JWTFailureException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/JWTFailureException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\MissingTokenException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/MissingTokenException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Exception\\UserNotFoundException' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Exception/UserNotFoundException.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Helper\\JWTSplitter' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Helper/JWTSplitter.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/LexikJWTAuthenticationBundle.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Response\\JWTAuthenticationFailureResponse' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Response/JWTAuthenticationFailureResponse.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Response\\JWTAuthenticationSuccessResponse' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Response/JWTAuthenticationSuccessResponse.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Authentication\\Provider\\JWTProvider' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Authentication/Provider/JWTProvider.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Authentication\\Token\\JWTUserToken' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Authentication/Token/JWTUserToken.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Authentication\\Token\\PreAuthenticationJWTUserToken' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Authentication/Token/PreAuthenticationJWTUserToken.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Authentication\\Token\\PreAuthenticationJWTUserTokenInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Authentication/Token/PreAuthenticationJWTUserTokenInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Authenticator\\JWTAuthenticator' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Authenticator/JWTAuthenticator.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Firewall\\JWTListener' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Firewall/JWTListener.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Guard\\JWTTokenAuthenticator' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Guard/JWTTokenAuthenticator.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Http\\Authentication\\AuthenticationFailureHandler' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Http/Authentication/AuthenticationFailureHandler.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Http\\Authentication\\AuthenticationSuccessHandler' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Http/Authentication/AuthenticationSuccessHandler.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Http\\Cookie\\JWTCookieProvider' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Http/Cookie/JWTCookieProvider.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\Http\\EntryPoint\\JWTEntryPoint' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/Http/EntryPoint/JWTEntryPoint.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\User\\JWTUser' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/User/JWTUser.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\User\\JWTUserInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/User/JWTUserInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\User\\JWTUserProvider' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/User/JWTUserProvider.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Security\\User\\PayloadAwareUserProviderInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Security/User/PayloadAwareUserProviderInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\JWSProvider\\DefaultJWSProvider' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/JWSProvider/DefaultJWSProvider.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\JWSProvider\\JWSProviderInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/JWSProvider/JWSProviderInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\JWSProvider\\LcobucciJWSProvider' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/JWSProvider/LcobucciJWSProvider.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\JWTManager' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/JWTManager.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\JWTManagerInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/JWTManagerInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\JWTTokenManagerInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/JWTTokenManagerInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\KeyLoader\\AbstractKeyLoader' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/KeyLoader/AbstractKeyLoader.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\KeyLoader\\KeyDumperInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/KeyLoader/KeyDumperInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\KeyLoader\\KeyLoaderInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/KeyLoader/KeyLoaderInterface.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\KeyLoader\\OpenSSLKeyLoader' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/KeyLoader/OpenSSLKeyLoader.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Services\\KeyLoader\\RawKeyLoader' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Services/KeyLoader/RawKeyLoader.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Signature\\CreatedJWS' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Signature/CreatedJWS.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\Signature\\LoadedJWS' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/Signature/LoadedJWS.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\TokenExtractor\\AuthorizationHeaderTokenExtractor' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/TokenExtractor/AuthorizationHeaderTokenExtractor.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\TokenExtractor\\ChainTokenExtractor' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/TokenExtractor/ChainTokenExtractor.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\TokenExtractor\\CookieTokenExtractor' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/TokenExtractor/CookieTokenExtractor.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\TokenExtractor\\QueryParameterTokenExtractor' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/TokenExtractor/QueryParameterTokenExtractor.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\TokenExtractor\\SplitCookieExtractor' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/TokenExtractor/SplitCookieExtractor.php',
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\TokenExtractor\\TokenExtractorInterface' => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle/TokenExtractor/TokenExtractorInterface.php',
+        'Namshi\\JOSE\\Base64\\Base64Encoder' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Base64/Base64Encoder.php',
+        'Namshi\\JOSE\\Base64\\Base64UrlSafeEncoder' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Base64/Base64UrlSafeEncoder.php',
+        'Namshi\\JOSE\\Base64\\Encoder' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Base64/Encoder.php',
+        'Namshi\\JOSE\\JWS' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/JWS.php',
+        'Namshi\\JOSE\\JWT' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/JWT.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\ECDSA' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/ECDSA.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\ES256' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/ES256.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\ES384' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/ES384.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\ES512' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/ES512.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\HMAC' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/HMAC.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\HS256' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/HS256.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\HS384' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/HS384.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\HS512' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/HS512.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\None' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/None.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\PublicKey' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/PublicKey.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\RS256' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/RS256.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\RS384' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/RS384.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\RS512' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/RS512.php',
+        'Namshi\\JOSE\\Signer\\OpenSSL\\RSA' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/OpenSSL/RSA.php',
+        'Namshi\\JOSE\\Signer\\SecLib\\PublicKey' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/SecLib/PublicKey.php',
+        'Namshi\\JOSE\\Signer\\SecLib\\RS256' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/SecLib/RS256.php',
+        'Namshi\\JOSE\\Signer\\SecLib\\RS384' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/SecLib/RS384.php',
+        'Namshi\\JOSE\\Signer\\SecLib\\RS512' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/SecLib/RS512.php',
+        'Namshi\\JOSE\\Signer\\SecLib\\RSA' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/SecLib/RSA.php',
+        'Namshi\\JOSE\\Signer\\SignerInterface' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/Signer/SignerInterface.php',
+        'Namshi\\JOSE\\SimpleJWS' => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE/SimpleJWS.php',
         'Negotiation\\AbstractNegotiator' => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation/AbstractNegotiator.php',
         'Negotiation\\Accept' => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation/Accept.php',
         'Negotiation\\AcceptCharset' => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation/AcceptCharset.php',
@@ -5851,7 +6029,6 @@ class ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd
             $loader->prefixLengthsPsr4 = ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit7b0960f40eba53fb5936a975bfa604cd::$classMap;
-
         }, null, ClassLoader::class);
     }
 }

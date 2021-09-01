@@ -13,6 +13,8 @@ services:
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
+
+
     App\:
         resource: '../src/'
         exclude:
@@ -21,5 +23,12 @@ services:
             - '../src/Kernel.php'
             - '../src/Tests/'
 
+    AppBundle\Faker\Provider\HashPasswordProvider: ~
+    App\Events\Subscriber:
+            tags:
+            - {name: kernel.event_listener, event: lexit_jwt_authentication.on_jwt_created,methods: updateJwtData}
+            
+
+            
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

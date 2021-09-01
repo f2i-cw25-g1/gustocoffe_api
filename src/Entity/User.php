@@ -3,22 +3,24 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use App\Repository\UtilisateurRepository;
+use App\Repository\UserRepository;
 use Doctrine\Common\Collections\Collection;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 
 /**
  * @ApiResource(
  *      normalizationContext={
  *          "groups"={"utilisateur_READ"}})
- * @ORM\Entity(repositoryClass=UtilisateurRepository::class)
+ * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @UniqueEntity("email",message="un utilisateur ayant cette adresse email existe déjà")
  */
-class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
+class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     /**
      * @ORM\Id
@@ -31,56 +33,43 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      * @Assert\NotBlank(message = "Merci de saisir votre email")
-     * @Assert\Email(message = "L'adresse email '{{ value }}' n'est pas valide.")
+     * @Assert\Email(message = "L'adresse email n'est pas valide")
      * @Groups({"utilisateur_READ"})
      */
     private $email;
 
     /**
      * @ORM\Column(type="json")
-     * @Groups({"utilisateur_READ"})
      */
     private $roles = [];
 
     /**
      * @var string The hashed password
-     * @ORM\Column(type="string")
+     * @Assert\NotBlank(message = "Le mot de passe est obligatoire")
      * @Assert\Length(min="8", minMessage="Veuillez saisir un mot de passe d'au moins 8 caractères")
      * @Assert\Length(max="20", maxMessage="Veuillez saisir un mot de passe de 20 caractères maximum")
      * @Assert\NotCompromisedPassword(message="Le mot de passe saisi a déjà fuité sur internet, veuillez saisir un autre mot de passe.")
-     * @Groups({"utilisateur_READ"})
+     * @ORM\Column(type="string")
      */
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=Facture::class, mappedBy="utilisateur")
-     * @Groups({"utilisateur_READ"})
-     */
-    private $factures;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     * @Assert\Length(min="4", minMessage="Veuillez saisir un nom d'utilisateur d'au moins 4 caractères")
-     * @Assert\Length(max="10", maxMessage="Veuillez saisir un nom d'utilisateur de 10 caractères maximum")
-     * @Groups({"utilisateur_READ"})
-     */
-    private $username;
-
-    /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message = "Le nom est obligatoire")
      * @Assert\Length(min="2", minMessage="Veuillez saisir un nom d'au moins 2 caractères")
      * @Assert\Length(max="20", maxMessage="Veuillez saisir un nom de 20 caractères maximum")
+     * @ORM\Column(type="string", length=255)
      * @Groups({"utilisateur_READ"})
      */
-    private $nom;
+    private $Nom;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message = "Le nom prenom est obligatoire")
      * @Assert\Length(min="2", minMessage="Veuillez saisir un prénom d'au moins 2 caractères")
      * @Assert\Length(max="20", maxMessage="Veuillez saisir un prénom de 20 caractères maximum")
+     * @ORM\Column(type="string", length=255)
      * @Groups({"utilisateur_READ"})
      */
-    private $prenom;
+    private $Prenom;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -92,7 +81,7 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="integer", nullable=true)
      * @Groups({"utilisateur_READ"})
      */
-    private $code_postal_adresse;
+    private $code_postal;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -100,8 +89,9 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $adresse_facturation;
 
+
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      * @Groups({"utilisateur_READ"})
      */
     private $code_postal_facturation;
@@ -111,6 +101,12 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @Groups({"utilisateur_READ"})
      */
     private $pays_facturation;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Facture::class, mappedBy="user")
+     * @Groups({"utilisateur_READ"})
+     */
+    private $factures;
 
     public function __construct()
     {
@@ -140,6 +136,14 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
      * @see UserInterface
      */
     public function getUserIdentifier(): string
+    {
+        return (string) $this->email;
+    }
+
+    /**
+     * @deprecated since Symfony 5.3, use getUserIdentifier instead
+     */
+    public function getUsername(): string
     {
         return (string) $this->email;
     }
@@ -198,68 +202,26 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
         // $this->plainPassword = null;
     }
 
-    /**
-     * @return Collection|Facture[]
-     */
-    public function getFactures(): Collection
-    {
-        return $this->factures;
-    }
-
-    public function addFacture(Facture $facture): self
-    {
-        if (!$this->factures->contains($facture)) {
-            $this->factures[] = $facture;
-            $facture->setUtilisateur($this);
-        }
-
-        return $this;
-    }
-
-    public function removeFacture(Facture $facture): self
-    {
-        if ($this->factures->removeElement($facture)) {
-            // set the owning side to null (unless already changed)
-            if ($facture->getUtilisateur() === $this) {
-                $facture->setUtilisateur(null);
-            }
-        }
-
-        return $this;
-    }
-
-    public function getUsername()
-    {
-        return $this->username;
-    }
-
-    public function setUsername(string $username): self
-    {
-        $this->username = $username;
-
-        return $this;
-    }
-
     public function getNom(): ?string
     {
-        return $this->nom;
+        return $this->Nom;
     }
 
-    public function setNom(string $nom): self
+    public function setNom(string $Nom): self
     {
-        $this->nom = $nom;
+        $this->Nom = $Nom;
 
         return $this;
     }
 
     public function getPrenom(): ?string
     {
-        return $this->prenom;
+        return $this->Prenom;
     }
 
-    public function setPrenom(string $prenom): self
+    public function setPrenom(string $Prenom): self
     {
-        $this->prenom = $prenom;
+        $this->Prenom = $Prenom;
 
         return $this;
     }
@@ -276,14 +238,14 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getCodePostalAdresse(): ?int
+    public function getCodePostal(): ?int
     {
-        return $this->code_postal_adresse;
+        return $this->code_postal;
     }
 
-    public function setCodePostalAdresse(?int $code_postal_adresse): self
+    public function setCodePostal(?int $code_postal): self
     {
-        $this->code_postal_adresse = $code_postal_adresse;
+        $this->code_postal = $code_postal;
 
         return $this;
     }
@@ -300,12 +262,12 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getCodePostalFacturation(): ?int
+    public function getCodePostalFacturation(): ?string
     {
         return $this->code_postal_facturation;
     }
 
-    public function setCodePostalFacturation(?int $code_postal_facturation): self
+    public function setCodePostalFacturation(?string $code_postal_facturation): self
     {
         $this->code_postal_facturation = $code_postal_facturation;
 
@@ -320,6 +282,36 @@ class Utilisateur implements UserInterface, PasswordAuthenticatedUserInterface
     public function setPaysFacturation(?string $pays_facturation): self
     {
         $this->pays_facturation = $pays_facturation;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Facture[]
+     */
+    public function getFactures(): Collection
+    {
+        return $this->factures;
+    }
+
+    public function addFacture(Facture $facture): self
+    {
+        if (!$this->factures->contains($facture)) {
+            $this->factures[] = $facture;
+            $facture->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeFacture(Facture $facture): self
+    {
+        if ($this->factures->removeElement($facture)) {
+            // set the owning side to null (unless already changed)
+            if ($facture->getUser() === $this) {
+                $facture->setUser(null);
+            }
+        }
 
         return $this;
     }

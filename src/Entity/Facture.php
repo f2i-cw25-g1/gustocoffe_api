@@ -8,12 +8,14 @@ use Doctrine\Common\Collections\Collection;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ApiResource(
  *      normalizationContext={
  *          "groups"={"facture_READ"}})
  * @ORM\Entity(repositoryClass=FactureRepository::class)
+ * denormalizationContext={"disable_type_enforcement"=false}
  */
 class Facture
 {
@@ -62,17 +64,18 @@ class Facture
     private $listeSalonsReserves;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Utilisateur::class, inversedBy="factures")
+     * @ORM\Column(type="float")
+     * @Groups({"facture_READ"})
+     * @Assert\Type(type="numeric",message="Le montant de la facture doit être un numérique")
+     */
+    private $montant;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="factures")
      * @ORM\JoinColumn(nullable=false)
      * @Groups({"facture_READ"})
      */
-    private $utilisateur;
-
-    /**
-     * @ORM\Column(type="float")
-     * @Groups({"facture_READ"})
-     */
-    private $montant;
+    private $user;
 
     public function __construct()
     {
@@ -193,18 +196,6 @@ class Facture
         return $this;
     }
 
-    public function getUtilisateur(): ?Utilisateur
-    {
-        return $this->utilisateur;
-    }
-
-    public function setUtilisateur(?Utilisateur $utilisateur): self
-    {
-        $this->utilisateur = $utilisateur;
-
-        return $this;
-    }
-
     public function getMontant(): ?float
     {
         return $this->montant;
@@ -213,6 +204,18 @@ class Facture
     public function setMontant(float $montant): self
     {
         $this->montant = $montant;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }
