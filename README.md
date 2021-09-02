@@ -1,7 +1,8 @@
 # Gusto Coffe
 
 Alexis RÉAU, Cédric BAUSSERON, ERIC CICCOTTI
-Ce projet à été réaliser avec Symfony et ApiPlatform https://api-platform.com/
+
+Ce projet à été réalisé avec Symfony et ApiPlatform https://api-platform.com/
 
 # URL
 
@@ -43,10 +44,12 @@ aller dans le dossier gustocoffe_api et lancer
 
 L'application va se lancer sur le port http://localhost:8000
 
-pour voir ApiPlatform, se rendre sur http://localhost:8000/api
+Pour voir ApiPlatform, se rendre sur http://localhost:8000/api
 
 ## configuration du projet en local
 
 S'assurer d'avoir la base de donnée qui est créee dans MYSQL
-Et créer remplir le fichier `.env.local` pour y mettre votre configuration
+
+Et remplir le fichier `.env.local` pour y mettre votre configuration
+
 exemples : `DATABASE_URL="mysql://root:@127.0.0.1:3306/gustocoffee-database?serverVersion=5.7&charset=utf8mb4"`
