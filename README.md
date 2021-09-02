@@ -1,4 +1,4 @@
-# Gusto Coffe
+# Gusto Coffee
 
 Alexis RÉAU, Cédric BAUSSERON, ERIC CICCOTTI
 
